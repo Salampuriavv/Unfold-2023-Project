@@ -1,0 +1,39 @@
+
+.container {
+    max-width: 800px;
+    margin: 0px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    color: #fff;
+}
+.container-fluid{
+    font-family: 'Pixelify Sans', sans-serif;
+    background-color: #940B92;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+h1{
+    text-align: center;
+   
+}
+.container div{
+    color: #9f0c9a;
+    font-size: 2rem;
+    text-align: center;
+}
+.loyalp{
+    margin-left: 90%;
+    margin-top: 100px;
+}
+.block{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}

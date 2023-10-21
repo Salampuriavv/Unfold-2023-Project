@@ -1,0 +1,62 @@
+body {
+    font-family: 'Pixelify Sans', sans-serif;
+    background-color: #940B92;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+    opacity: 0.8;
+}
+
+.container {
+    max-width: 800px;
+    height: 500px;
+    background: #610C9F;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.profile {
+    text-align: center;
+}
+
+h2 {
+    margin-top: 10px ;
+   text-align: center;
+   font-weight: 700;
+   font-size: 2.5rem;
+}
+
+.user-details {
+    margin-top: 20px;
+    padding: 1rem;
+}
+
+.user-details p {
+    margin: 10px 0 10px 30px;
+    font-size: 1.5rem;
+}
+.pic{
+    display: flex;
+    justify-content: center;
+    
+}
+.pic img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-around;
+}
+.btn{
+    font-size: 1.85rem;
+}
+

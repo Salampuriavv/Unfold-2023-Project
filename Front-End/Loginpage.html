@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro2Play</title>
+    <link rel="icon" href="icon-256.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="logpage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Pixelify+Sans:wght@500;600&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <script>
+        // JavaScript code
+        document.getElementById("login-form").addEventListener("submit", function (event) {
+            // Prevent the form from submitting to the server by default
+            event.preventDefault();
+
+            // Get the username input value
+            const username = document.getElementById("username").value;
+
+            // You can add your validation logic here
+            if (username.trim() === "") {
+                alert("Please enter a username.");
+            } else {
+                // Form is valid, you can submit it to the server
+                this.submit();
+            }
+        });
+    </script>
+    <nav class="navbar  bg-pink  navbar-expand-lg " data-bs-theme="dark">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand " style="font-size: 1.85rem;"><img src="icon-256.png" alt="Bootstrap" width="30" height="24"> Pro2Play</a>
+            
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"> 
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">    
+                <div class="navbar-nav">
+                    <a href="#" class="nav-link"></a>
+                    <a href="#" class="nav-link"></a>
+                    <a href="#" class="nav-link" style="font-size: 1.5rem;">AboutUs</a>
+                    <a href="#" class="nav-link" style="font-size: 1.5rem;">FAQ</a>
+                </div>
+            </div>
+            <a href="signup.html" class="btn btn-outline-light" style="font-size: 1.75rem;">SignUp</a>
+        </div>
+    </nav>
+    <div class="contain">
+        <h2>Login <i class="fa-solid fa-key"></i></h2>
+        <form action="login.php" method="post">
+            <input type="text" name="username" placeholder="Your key" required>
+            <!-- <input type="password" name="password" placeholder="Password" required> -->
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>
